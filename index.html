@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WDD 131 - Wesley Raymundo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Wesley Raymundo</title>
+        <meta name="description" content="Home page for WDD 131 - Dynamic Web Fundamentals, made by Wesley Raymundo">
+        <meta name="author" content="Wesley Raymundo">
+        <link rel="stylesheet" href="styles/base.css">
+        <script defer src="scripts/getdates.js"></script>
     </head>
     <body>
-        <h1>WDD 131 - Wesley Raymundo</h1>
+        <header>
+            <h1>WDD 131 - Dynamic Web Fundamentals - Wesley Raymundo</h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/wesley-raymundo/">LinkedIn</a>
+                <a href="https://byui.instructure.com/">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/10?id=p19#p19">Scripture</a>
+                <a href="#">Final Project</a>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <p>
+                    Hi there! 
+                    My name is Wesley Raymundo and I live with my wife and our dog in Colombo, Brazil. 
+                    I work as a game developer for more than 8 years, focused on web and mobile games 
+                    for education, mostly developing with the Unity game engine. I like to observe and 
+                    learn new things and to organize/clean a project or our own home.
+                </p>
+                <img src="images/portrait-wesley-raymundo.webp" alt="Portrait of Wesley Raymundo">
+
+                <h3>Colombo, Brazil</h3>
+                <figure>
+                    <img src="images/flag-colombo.webp" alt="Municipal flag of Colombo, Brazil">
+                    <figcaption>Municipal Flag of Colombo</figcaption>
+                </figure>
+                <p>
+                    Colombo is a city in Paraná, Brazil, part of the metropolitan region of Curitiba, 
+                    known for its Italian heritage and wine production. It combines urban growth 
+                    with a rural lifestyle, offering a mix of residential and agricultural activities.
+                </p>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MSDN</a></li>
+                    <li><a href="https://www.w3schools.com/html/">W3 Schools</a></li>
+                    <li><a href="https://squoosh.app/editor">Squoosh</a></li>
+                    <li><a href="https://coolors.co/001d4a-f5f1ed-dad2bc-a99985-70798c">Coolors.co</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> - Wesley Raymundo - Colombo, Brazil</p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 </html>
