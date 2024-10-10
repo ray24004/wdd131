@@ -2,22 +2,28 @@ const inputElement = document.querySelector("input");
 const buttonElement = document.querySelector("button");
 const listElement = document.querySelector("#list");
 
-let listItem = document.createElement("li");
-let deleteButton = document.createElement("button");
+buttonElement.addEventListener("click", () => {
+  if (!inputElement.value) {
+    return;
+  }
+  
+  let listItem = document.createElement("li");
+  let deleteButton = document.createElement("button");
+  
+  listItem.textContent = inputElement.value;
+  deleteButton.textContent = "❌";
+  
+  listItem.append(deleteButton);
+  listElement.append(listItem);
 
-listItem.textContent = inputElement.value;
-deleteButton.textContent = "❌";
-
-listItem.append(deleteButton);
-listElement.append(listItem);
-
-
-
-function copyInput(event) {
-    console.log(event)
-}
-buttonElement.addEventListener("click", copyInput);
-
+  deleteButton.addEventListener("click", () => {
+    listItem.remove();
+    inputElement.focus();
+  });
+  
+  inputElement.value = "";
+  inputElement.focus();
+});
 
 document.addEventListener("keydown", logKey);
 
