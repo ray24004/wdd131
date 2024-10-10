@@ -1,0 +1,38 @@
+:root {
+    --color1: #87CACA;
+    --color2: #22F1EA;
+    --color3: #3A63F4;
+    --color4: #2137B0;
+    --color5: #59BCC2;
+    --color6: #000000;
+    --color7: #ffffff;
+
+    --font-title: 'Roboto';
+    --font-body: 'Open Sans';
+}
+
+@media (min-width: 630px) {
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    nav, nav.hide {
+        display: flex;
+        list-style: none;
+        justify-content: end;
+        align-items: center;
+        top: 2.5px;
+        right: 3px;
+    }
+
+    nav a {
+        height: 100%;
+        background-color: var(--color4);
+        font-size: 1rem;
+    }
+
+    header button {
+        display: none;
+    }
+}
