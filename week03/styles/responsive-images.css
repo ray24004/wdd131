@@ -1,0 +1,9 @@
+* {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
