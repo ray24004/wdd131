@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W03 Place Assignment</title>
+    <meta name="description" content="Application activity for WDD 131 W03">
+    <meta name="author" content="Wesley Raymundo">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Colombo, Brazil</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/colombo-large.webp">
+            <source media="(min-width: 600px)" srcset="images/colombo-medium.webp">
+            <img src="images/colombo-small.webp" width="1440" height="960" alt="Photo of Nossa Senhora do Rosário Square in Colombo, Brazil">
+        </picture>
+        <section class="floatLeft">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area</dt>
+                <dd>197 km²</dd>
+                <dt>Population</dt>
+                <dd>246,540</dd>
+                <dt>Capital</dt>
+                <dd>n/a</dd>
+                <dt>Languages</dt>
+                <dd>Portuguese</dd>
+                <dt>Currency</dt>
+                <dd>Brazilian Real</dd>
+                <dt>Time Zone</dt>
+                <dd>UTC-3</dd>
+                <dt>Calling Code</dt>
+                <dd>+55 (41)</dd>
+                <dt>Internet TLD</dt>
+                <dd>.br</dd>
+            </dl>
+        </section>
+        <section class="floatRight">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Icon for partial cloudy weather" width="64" height="64">
+            <dl>
+                <dt>Temperature</dt>
+                <dd id="temperature">18 °C</dd>
+                <dt>Conditions</dt>
+                <dd>Cloudy</dd>
+                <dt>Wind</dt>
+                <dd id="wind">14 km/h</dd>
+                <dt>Wind Chill</dt>
+                <dd id="windChill"></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Wesley Raymundo - Colombo, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
