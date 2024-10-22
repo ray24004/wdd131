@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --color1: #f0ffff;
+    --color2: #22F1EA;
+    --color3: #3A63F4;
+    --color4: #2137B0;
+    --color5: #59BCC2;
+    --color6: #000000;
+    --color7: #ffffff;
+
+    --font-title: 'Roboto';
+    --font-body: 'Open Sans';
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+h1, h2 {
+    font-family: var(--font-title);
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    background-color: var(--color4);
+    color: var(--color7);
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: var(--color7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    padding: .75rem 1.5rem;
+}
+
+header button::before {
+    content: '\2630';
+}
+
+header button.hide::before {
+    content: "X";
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav.hide {
+    display: none;
+}
+
+nav a {
+    display: block;
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: var(--color3);
+    color: var(--color7);
+}
+
+nav a:hover {
+    background-color: var(--color1);
+    color: var(--color6);
+}
+
+main {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+}
+
+main h2 {
+    grid-column: 1 / -1;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    padding: .25rem;
+    color: var(--color4);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color4);
+    color: var(--color7);
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+    padding: .5rem;
+}
+
+/* 
+    Week 04 
+*/
+
+.templeCard {
+    background-color: var(--color1);
+    padding: 1rem;
+    border: .1rem solid var(--color5);
+}
+
+.templeCard ul {
+    text-align: center;
+    list-style: none;
+    padding-bottom: 1.5rem;
+}
+
+.templeCard li {
+    padding: .1rem;
+}
+
+.templeCard .dataName {
+    color: var(--color4);
+    font-variant-caps: small-caps;
+    font-weight: bold;
+    display: inline;
+    text-align: right;
+}
+
+.templeCard img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1rem var(--color6);
+}
