@@ -101,3 +101,8 @@ footer p {
     text-align: center;
     padding: .5rem;
 }
+
+main p {
+    padding: 2rem;
+    text-align: center;
+}
