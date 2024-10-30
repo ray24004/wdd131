@@ -10,10 +10,10 @@ fillProfessionalLabels(professional);
 
 const games = [
     {
-        title: "Game 1",
-        access: "",
-        genre: "",
-        company: "",
+        title: "STEM Play",
+        access: "Android",
+        genre: "Educational Hub",
+        company: "Happy S.A.",
         outcomes: [
             "Outcome 1",
             "Outcome 2",
@@ -57,20 +57,18 @@ function fillGamesSection(gameDataArray) {
         });
     
         article.innerHTML = `
-            <article class="gameArticle">
-                <picture>
-                    <img src="${g.imageUrl}" alt="${g.title} image">
-                </picture>
-                <h2>${g.title}</h2>
-                <p>[ ${g.access} ]</p>
-                <p>${g.genre}</p>
-                <p>- ${g.company} -</p>
-                <p>Outcomes</p>
-                <ul>
-                    ${outcomeItems}
-                </ul>
-                <a href="${g.callActionUrl}" class="gameCallAction">${g.callActionLabel}</a>
-            </article>
+            <picture>
+                <img src="${g.imageUrl}" alt="${g.title} image">
+            </picture>
+            <h2>${g.title}</h2>
+            <p>[ ${g.access} ]</p>
+            <p>${g.genre}</p>
+            <p>- ${g.company} -</p>
+            <p>Outcomes</p>
+            <ul>
+                ${outcomeItems}
+            </ul>
+            <a href="${g.callActionUrl}" class="gameCallAction">${g.callActionLabel}</a>
         `;
     
         gamesSection.appendChild(article);

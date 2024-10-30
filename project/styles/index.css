@@ -1,0 +1,90 @@
+body {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color5);
+    color: var(--color4);
+}
+
+header button {
+    position: absolute;
+    border-radius: 1rem;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+header button:hover {
+    background-color: var(--color3);
+}
+
+header .professionalName {
+    font-weight: bold;
+}
+
+header .professionalTitle {
+    font-weight: lighter;
+    font-size: small;
+}
+
+header :is(
+    .professionalEmail, 
+    .professionalPhone
+) {
+    font-style: italic;
+    font-size: small;
+}
+
+main {
+    text-align: center;
+}
+
+main h1 {
+    background-color: var(--color2);
+    color: var(--color5);
+    margin: 0;
+    padding: 1rem;
+}
+
+.gameArticle {
+    border-bottom: 1rem solid var(--color2);
+    padding: 2rem;
+}
+
+.gameArticle ul {
+    list-style: none;
+    padding: 0 0 2rem 0;
+}
+
+.gameArticle li {
+    padding: .2rem 0;
+}
+
+.gameArticle a {
+    background-color: var(--color2);
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+.gameArticle a:hover {
+    background-color: var(--color1);
+}
+
+#contactSection {
+    padding: 2rem 0;
+}
+
+#contactSection :is(input, textarea) {
+    display: block;
+    margin: .5rem auto;
+}
+
+footer {
+    text-align: center;
+}
