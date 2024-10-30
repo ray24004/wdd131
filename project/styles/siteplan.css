@@ -1,0 +1,46 @@
+:root {
+    --color1: #474747;
+    --color2: #FF5E0E;
+    --color3: #D5D5D5;
+    --color4: #1E1E1E;
+    --color5: #F1F1F1;
+
+    --font1: 'Open Sans';
+    --font2: 'Roboto';
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font2);
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    background-color: var(--color4);
+    color: var(--color3);
+}
+
+body img {
+    height: 800px;
+    width: auto;
+    margin: 0 2rem;
+}
+
+h1, h2 {
+    font-family: var(--font1);
+    margin: 1rem 0;
+
+    color: var(--color2);
+}
+
+p {
+    margin: 1rem 0;
+}
+
+a:visited, a:link {
+    color: var(--color5);
+}
