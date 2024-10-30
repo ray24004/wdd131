@@ -28,7 +28,10 @@ const products = [
 
 const productSelect = document.querySelector("#product");
 
-productSelect.innerHTML = "";
+productSelect.innerHTML = `
+    <option value="" selected disabled hidden>Select a Product...</option>
+`;
+
 products.forEach(p => {
     const option = document.createElement("option");
     option.innerHTML = p.name;
