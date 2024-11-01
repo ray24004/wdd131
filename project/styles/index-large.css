@@ -3,4 +3,12 @@
         max-width: 768px;
         margin: 0 auto;
     }
+
+    header div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: .1rem;
+        align-items: center;
+    }
 }

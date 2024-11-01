@@ -29,9 +29,6 @@ header img {
 header div {
     padding: 1rem;
     padding-right: 5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 header button:hover {
@@ -68,7 +65,8 @@ nav a {
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 2rem;
 }
 
 nav a:hover {
