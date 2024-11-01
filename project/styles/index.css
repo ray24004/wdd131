@@ -19,6 +19,21 @@ header button {
     font-size: 2rem;
 }
 
+header img {
+    width: 64px;
+    height: auto;
+    border-radius: .2rem;
+    margin: 0;
+}
+
+header div {
+    padding: 1rem;
+    padding-right: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 header button:hover {
     background-color: var(--color3);
 }
@@ -40,6 +55,27 @@ header :is(
     font-size: small;
 }
 
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: var(--color2);
+    border-bottom: .1rem solid var(--color4);
+    box-shadow: 0 .1rem 1rem var(--color4);
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: var(--color1);
+    font-weight: bold;
+}
+
 main {
     text-align: center;
 }
@@ -48,12 +84,18 @@ main h1 {
     background-color: var(--color2);
     color: var(--color5);
     margin: 0;
-    padding: 1rem;
+    padding: 3rem 0 2rem 0;
 }
 
 .gameArticle {
     border-bottom: 1rem solid var(--color2);
-    padding: 2rem;
+    padding: 0 0 3rem 0;
+}
+
+.gameArticle img {
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 
 .gameArticle ul {
@@ -62,7 +104,8 @@ main h1 {
 }
 
 .gameArticle li {
-    padding: .2rem 0;
+    padding: 1rem 0;
+    font-size: small;
 }
 
 .gameArticle a {
@@ -87,4 +130,13 @@ main h1 {
 
 footer {
     text-align: center;
+}
+
+footer img {
+    width: 20px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
 }

@@ -6,7 +6,6 @@ const professional = {
     location: "Colombo, Paraná, Brazil",
     linkedin: "wesley-raymundo"
 }
-fillProfessionalLabels(professional);
 
 const games = [
     {
@@ -15,16 +14,86 @@ const games = [
         genre: "Educational Hub",
         company: "Happy S.A.",
         outcomes: [
-            "Outcome 1",
-            "Outcome 2",
-            "Outcome 3"
+            "Colaborating with and supporting a team of 4 developers and 1 artist",
+            "Design, prototype and collaborate with new gameplay mechanics and level designs",
+            "Handle scrum dailies, plannings, reviews and retrospectives",
+            "Communicate goals and needs between business, departments, and the development team",
+            "Offer trainings for hard and soft skills, give feedbacks",
+            "Present live trainings and reports"
         ],
         callActionLabel: "Watch Gameplay",
         callActionUrl: "#",
-        imageUrl: ""
+        imageUrl: "images/stemplay-large.webp"
+    },
+    {
+        title: "Kukoos: Lost Pets",
+        access: "Steam",
+        genre: "3D Platformer",
+        company: "Petit Fabrik",
+        outcomes: [
+            "Actor Setup and AI of 3 Enemy Characters",
+            "Actor Setup and Piloting Experience of a Broadcast Chopper and Bomber Airplane",
+            "General Gameplay and Level Design Improvements"
+        ],
+        callActionLabel: "Watch Teaser",
+        callActionUrl: "#",
+        imageUrl: "images/kukoos-large.webp"
+    },
+    {
+        title: "A Jornada da Graciosa",
+        access: "itch.io",
+        genre: "Exploration and Turn Based Combat",
+        company: "HoytHoy",
+        outcomes: [
+            "Dialog System, Tutorial System, Interactables, Highlighting",
+            "Narrative Screen, General UI",
+            "Models, Animations, and VFX setup",
+            "General gameplay improvements",
+            "Tools and shortcuts that eases and speed up team's work",
+            "Version control through Git, Bitbucket and SourceTree"
+        ],
+        callActionLabel: "Watch Gameplay",
+        callActionUrl: "#",
+        imageUrl: "images/graciosa-large.webp"
+    },
+    {
+        title: "Say It! - Game",
+        access: "Microsoft Store",
+        genre: "Voice-controlled Endless Runner",
+        company: "Mustache Games",
+        outcomes: [
+            "Endless Runner Gameplay",
+            "Access's to Windows Phone Voice Recognition",
+            "Facebook Friends Ranking",
+            "Player Level Progression",
+            "In-app Purchases Store",
+            "Mission System",
+            "Camera Moves",
+            "Mecanim Animation Setup",
+            "UI Animations with Tweeners",
+            "Particle System Effects",
+            "FPS, Memory and Build Size Optmizations​",
+            "Version Control through Visual Studio (TFVC - Team Foudation Version Control)",
+            "( Art Assets: Alexandre Nowacki )",
+        ],
+        callActionLabel: "Watch Gameplay",
+        callActionUrl: "#",
+        imageUrl: "images/sayit-large.webp"
     }
 ]
+
+setupMenu();
+fillProfessionalLabels(professional);
 fillGamesSection(games);
+
+function setupMenu() {
+    const menuButton = document.querySelector("#menuButton");
+    const navElement = document.querySelector("header nav");
+
+    menuButton.addEventListener("click", e => {
+        navElement.classList.toggle("hidden");
+    });
+}
 
 function fillProfessionalLabels(professionalData) {
     const nameLabels = document.querySelectorAll(".professionalName");
@@ -64,7 +133,7 @@ function fillGamesSection(gameDataArray) {
             <p>[ ${g.access} ]</p>
             <p>${g.genre}</p>
             <p>- ${g.company} -</p>
-            <p>Outcomes</p>
+            <p><b>Contributions:</b></p>
             <ul>
                 ${outcomeItems}
             </ul>
