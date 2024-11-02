@@ -1,9 +1,9 @@
 :root {
     --color1: #474747;
-    --color2: #FF5E0E;
+    --color2: #ff5e0e;
     --color3: #D5D5D5;
     --color4: #1E1E1E;
-    --color5: #F1F1F1;
+    --color5: #ffffff;
 
     --font1: 'Open Sans';
     --font2: 'Roboto';
@@ -30,7 +30,7 @@ body img {
     margin: 0 2rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--font1);
     margin: 1rem 0;
 

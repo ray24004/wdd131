@@ -127,9 +127,9 @@ function fillGamesSection(gameDataArray) {
     
         article.innerHTML = `
             <picture>
-                <img src="${g.imageUrl}" alt="${g.title} image">
+                <img src="${g.imageUrl}" alt="${g.title} image" lazy>
             </picture>
-            <h2>${g.title}</h2>
+            <h3>${g.title}</h3>
             <p>[ ${g.access} ]</p>
             <p>${g.genre}</p>
             <p>- ${g.company} -</p>

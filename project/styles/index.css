@@ -1,5 +1,5 @@
 body {
-    max-width: 100vw;
+    max-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -19,20 +19,20 @@ header button {
     font-size: 2rem;
 }
 
+header button:hover {
+    background-color: var(--color3);
+}
+
 header img {
     width: 64px;
     height: auto;
     border-radius: .2rem;
     margin: 0;
-}
+}    
 
 header div {
     padding: 1rem;
     padding-right: 5rem;
-}
-
-header button:hover {
-    background-color: var(--color3);
 }
 
 header .professionalName {
@@ -66,7 +66,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 nav a:hover {
@@ -96,9 +96,14 @@ main h1 {
     margin: 0;
 }
 
+.gameArticle :is(p, ul) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .gameArticle ul {
     list-style: none;
-    padding: 0 0 2rem 0;
+    padding-bottom: 2rem;
 }
 
 .gameArticle li {
@@ -109,8 +114,10 @@ main h1 {
 .gameArticle a {
     background-color: var(--color2);
     border-radius: 1rem;
-    padding: .5rem 1rem;
+    padding: 1rem 1.25rem;
     text-decoration: none;
+    font-size: large;
+    font-weight: bold;
 }
 
 .gameArticle a:hover {
@@ -123,7 +130,30 @@ main h1 {
 
 #contactSection :is(input, textarea) {
     display: block;
-    margin: .5rem auto;
+    margin: .75rem auto;
+    width: 10rem;
+    height: 1.75rem;
+}
+
+#contactSection textarea {
+    height: 5rem;
+    width: 20rem;
+}
+
+#contactSection input[type="submit"] {
+    background-color: var(--color2);
+    color: var(--color5);
+    border: none;
+    border-radius: 1rem;
+    margin: 3rem auto;
+    font-size: large;
+    font-weight: bold;
+    height: 2.5rem;
+}
+
+#contactSection input[type="submit"]:hover {
+    background-color: var(--color1);
+    cursor: pointer;
 }
 
 footer {
@@ -133,6 +163,7 @@ footer {
 footer img {
     width: 20px;
     height: auto;
+    margin-bottom: 2rem;
 }
 
 .hidden {
