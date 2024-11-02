@@ -40,8 +40,7 @@ header .professionalName {
 }
 
 header .professionalTitle {
-    font-weight: lighter;
-    font-size: small;
+    font-size: .9rem;
 }
 
 header :is(
@@ -88,6 +87,7 @@ main h1 {
 .gameArticle {
     border-bottom: 1rem solid var(--color2);
     padding: 0 0 3rem 0;
+    font-size: 1.25rem;
 }
 
 .gameArticle img {
@@ -108,7 +108,8 @@ main h1 {
 
 .gameArticle li {
     padding: 1rem 0;
-    font-size: small;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .gameArticle a {
